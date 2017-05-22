@@ -1,0 +1,31 @@
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h2>Login</h2>
+
+<input type="button" name="upload" id="upload1" style="cursor: pointer;width: 100px;" value="UpLaod">
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+<script>
+    $("#upload1").click(function () {
+        var user = {
+            username: "张三",
+            password: "",
+            role:"admin"
+    }
+
+        $.ajax({
+            type: 'post',
+            url: '/Account/Login',
+            data: user,
+            success: function (sesponseTest) {
+                alert("access_token:" + sesponseTest['access_token'] + ",expires_in:" + sesponseTest['expires_in']);
+            },
+            error: function () {
+                alert("上传文件出现错误！");
+            }
+        });
+    });
+</script>
