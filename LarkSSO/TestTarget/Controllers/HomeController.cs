@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace TestTarget.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "admin")]
     public class HomeController : Controller
     {
         public IActionResult Index()

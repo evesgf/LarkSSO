@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Cors;
 
 namespace LarkSSO.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]/[action]")]
     public class AccountController : Controller
     {

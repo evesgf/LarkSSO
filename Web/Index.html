@@ -191,7 +191,7 @@ $("#login").click(function(){
 					"Authorization": "Bearer "+token
 				},
 				type: 'post',
-				url: 'http://localhost:64397/api/account/AccessView',
+				url: 'http://localhost:53678/api/Resources/GetResources',
 				data: user,
 				success: function (re) {
 					alert(re);
