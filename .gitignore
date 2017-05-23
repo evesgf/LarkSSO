@@ -4,3 +4,9 @@
 /LSSO/WebApplication1/bin
 /LSSO/LSSO/bin
 /LSSO/.vs/LSSO/v15/*.suo
+/LSSO/LSSO/obj
+/LarkSSO/.vs
+/LarkSSO/TestTarget/obj
+/LarkSSO/TestTarget/bin
+/LarkSSO/LarkSSO/obj
+/LarkSSO/LarkSSO/bin
